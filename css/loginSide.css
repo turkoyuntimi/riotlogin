@@ -1,0 +1,182 @@
+.loginSide form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: clamp(40px, 8%, 70px);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.loginSide form > img {
+    width: 30%;
+    margin-bottom: 20%;
+}
+
+.loginSide form > h1 {
+    color: var(--deep-grey);
+    font-size: 1.3rem;
+    margin-bottom: 10%;
+}
+
+.labelLogin {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    position: relative;
+
+}
+
+.labelLogin input {
+    width: 100%;
+    background: var(--light-grey);
+    border-radius: 5px;
+    outline: none;
+    padding: 20px 12px 12px;
+    font-weight: 600;
+    color: var(--deep-grey);
+    border: 2px solid transparent;
+}
+
+.labelLogin input:focus {
+    background: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.labelLogin span {
+    position: absolute;
+    font-size: .7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.labelLogin img {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 28px;
+    opacity: .8;
+}
+
+.labelLogin img:hover {
+    cursor: pointer;
+}
+
+.labelLogin > .spanActive {
+    font-size: .6em;
+    margin: 8px 12px;
+}
+
+.iconsLogin {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.iconsLogin img {
+    width: 15%;
+}
+
+.iconsLogin button {
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.iconsLogin button:nth-child(1) {
+    background: var(--blue);
+}
+.iconsLogin button:nth-child(2) {
+    background: var(--light-grey);
+}
+.iconsLogin button:nth-child(3) {
+    background: var(--black);
+}
+
+.labelCheckbox {
+    width: 100%;
+    margin: 15px 0;
+    font-size: .7rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.labelCheckbox input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--light-grey);
+    border-radius: 3px;
+}
+
+.labelCheckbox input:checked {
+    background: var(--red);
+}
+
+.labelCheckbox input:checked::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.btnLogin button {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    margin:35px 20%;
+}
+
+.btnLogin svg {
+    fill: white;
+    width: 14px;
+}
+
+.btnLogin button:disabled {
+    cursor: auto;
+    background: white;
+    border: 2px solid var(--light-grey);
+}
+
+.btnLogin button:disabled svg {
+    fill: var(--grey);
+}
+
+.link {
+    font-size: .6em;
+    text-decoration: none;
+    color: var(--medium-grey);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
